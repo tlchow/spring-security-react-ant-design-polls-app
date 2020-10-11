@@ -1,3 +1,7 @@
+let API_URL = 'http://localhost:8080/api';
+if (process.env.APISERVER_URL) {
+    API_URL = `${process.env.APISERVER_URL}/api`;
+}
 export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080/api';
 export const ACCESS_TOKEN = 'accessToken';
 
